@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Cinema</h1>
+    </header>
+    <main>
+        <section id="movies">
+            <h2>Filmes em Cartaz</h2>
+            <div id="movie-list" class="movie-list"></div>
+        </section>
+        <section id="add-movie">
+            <h2>Adicionar Filme</h2>
+            <form id="movie-form">
+                <input type="text" id="movie-title" placeholder="Título do Filme" required>
+                <input type="text" id="movie-director" placeholder="Diretor" required>
+                <input type="text" id="movie-image" placeholder="URL da Imagem" required>
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Imagem do filme">
+            <p id="modal-director"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
